@@ -1,0 +1,37 @@
+﻿{
+    "schemaVersion":  1,
+    "packId":  "gobbleverse",
+    "name":  "코블버스 클라이언트 필수 모드",
+    "channel":  "stable",
+    "manifestVersion":  "2026.07.21.1842",
+    "minecraftVersion":  "1.21.1",
+    "generatedAt":  "2026-07-21T09:42:31.0601966Z",
+    "mods":  [
+                 {
+                     "id":  "cobbleverse_ui",
+                     "displayName":  "코블버스 UI",
+                     "version":  "0.2.16",
+                     "fileName":  "cobbleverse-ui-0.2.16.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-ui-0.2.16.jar",
+                     "sha256":  "9d77ff580bb829039cb6667f4378dcfcd59b0512f8ecca464d92c73ec2eea3c9",
+                     "sizeBytes":  497296,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobbleverse-ui-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobbleverse_claim",
+                     "displayName":  "코블버스 건차",
+                     "version":  "0.2.0",
+                     "fileName":  "cobbleverse-claim-0.2.0.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-claim-0.2.0.jar",
+                     "sha256":  "a3cac65e43b287824d398c36ce11cc1a824f3f50e4aff6c7889e2ffa2d8d6597",
+                     "sizeBytes":  70013,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobbleverse-claim-*.jar"
+                                             ]
+                 }
+             ]
+}
