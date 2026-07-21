@@ -4,7 +4,7 @@
 
 ## 플레이어 설치
 
-1. [GobbleverseClientUpdater.exe](https://github.com/gominsu08/gobbleverse-client-updates/raw/main/downloads/GobbleverseClientUpdater.exe)를 받습니다.
+1. [GobbleverseClientUpdater.exe](https://github.com/gominsu08/gobbleverse-client-updates/releases/latest/download/GobbleverseClientUpdater.exe)를 받습니다.
 2. 마인크래프트를 완전히 종료합니다.
 3. EXE를 실행합니다.
 4. 도구가 Modrinth의 COBBLEVERSE 인스턴스를 찾아 최신 모드만 백업 후 설치합니다.
