@@ -1,28 +1,514 @@
 ﻿{
     "schemaVersion":  1,
     "packId":  "gobbleverse",
-    "name":  "코블버스 클라이언트 필수 모드",
+    "name":  "코블버스 클라이언트 호환 모드",
     "channel":  "stable",
-    "manifestVersion":  "2026.07.24.2046",
+    "manifestVersion":  "2026.07.24.2115",
     "minecraftVersion":  "1.21.1",
-    "generatedAt":  "2026-07-24T11:45:46.7271249Z",
+    "generatedAt":  "2026-07-24T12:04:05.3732474Z",
     "mods":  [
                  {
-                     "id":  "cobbleverse_ui",
-                     "displayName":  "코블버스 UI",
-                     "version":  "0.2.22",
-                     "fileName":  "cobbleverse-ui-0.2.22.jar",
-                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-ui-0.2.22.jar",
-                     "sha256":  "6575b9e8deab5c208cf2b9b9b07c923ce76b0bcabfb013430526b99425f1890f",
-                     "sizeBytes":  516382,
+                     "id":  "accessories",
+                     "modIds":  [
+                                    "accessories"
+                                ],
+                     "displayName":  "Accessories",
+                     "version":  "1.1.0-beta.53+1.21.1",
+                     "fileName":  "accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/jtmvUHXj/versions/Xlt4eWBe/accessories-fabric-1.1.0-beta.53%2B1.21.1.jar",
+                     "sha256":  "51e6f6d52cb2523199ad36e5bc04802230f86904c35ac3dbf36e59c86b2c30d1",
+                     "sizeBytes":  1095802,
                      "required":  true,
                      "managedFilePatterns":  [
-                                                 "cobbleverse-ui-*.jar"
+                                                 "accessories-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "accessories_compat_layer",
+                     "modIds":  [
+                                    "accessories_compat_layer"
+                                ],
+                     "displayName":  "Accessories Compatibility Layer",
+                     "version":  "0.1.12",
+                     "fileName":  "accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ySnjMzLg/versions/pWxabbaf/accessories_compat_layer-fabric-0.1.12%2B1.21.1.jar",
+                     "sha256":  "c77c281616618ee51bb4f9bced4708be6d1baa690b3e8564a68d04df9f080980",
+                     "sizeBytes":  398321,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "accessories_compat_layer-fabric-*+1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "advancementdisable",
+                     "modIds":  [
+                                    "advancementdisable"
+                                ],
+                     "displayName":  "AdvancementDisable",
+                     "version":  "1.0.0",
+                     "fileName":  "advancementdisable-fabric-1.0.1+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/XIsVTmcm/versions/Txi9EkP3/advancementdisable-fabric-1.0.1%2B1.21.jar",
+                     "sha256":  "53e5c47d485b0a0dd417c2255523679a0b4bba059ae796cdab746112ad1440d6",
+                     "sizeBytes":  430411,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "advancementdisable-fabric-1.0.1+1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "advancementplaques",
+                     "modIds":  [
+                                    "advancementplaques"
+                                ],
+                     "displayName":  "Advancement Plaques",
+                     "version":  "1.6.8",
+                     "fileName":  "AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/9NM0dXub/versions/g0SNjiMq/AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+                     "sha256":  "dda6cc159edd450d05b9ff15832747b951dacd068c601018c219bca833ce5bef",
+                     "sizeBytes":  195505,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "AdvancementPlaques-1.21.1-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "architectury",
+                     "modIds":  [
+                                    "architectury"
+                                ],
+                     "displayName":  "Architectury",
+                     "version":  "13.0.8",
+                     "fileName":  "architectury-13.0.8-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/lhGA9TYQ/versions/Wto0RchG/architectury-13.0.8-fabric.jar",
+                     "sha256":  "10cbbb6f5f96a2f1853b0cc68428424cec8903409517b299ff02350756b6399d",
+                     "sizeBytes":  600915,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "architectury-*-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "athena",
+                     "modIds":  [
+                                    "athena"
+                                ],
+                     "displayName":  "Athena",
+                     "version":  "4.0.6",
+                     "fileName":  "athena-fabric-1.21.1-4.0.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/JfyYsWKP/athena-fabric-1.21.1-4.0.6.jar",
+                     "sha256":  "e17aad84c690ac4e46300a4180b3ae4077ffa4f526dbc82d117afbbff4ee83e4",
+                     "sizeBytes":  88425,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "athena-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "badoptimizations",
+                     "modIds":  [
+                                    "badoptimizations"
+                                ],
+                     "displayName":  "BadOptimizations",
+                     "version":  "2.4.1",
+                     "fileName":  "BadOptimizations-2.4.1-1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/g96Z4WVZ/versions/S2qthD5S/BadOptimizations-2.4.1-1.21.1.jar",
+                     "sha256":  "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba",
+                     "sizeBytes":  283566,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "BadOptimizations-*-1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "balm",
+                     "modIds":  [
+                                    "balm"
+                                ],
+                     "displayName":  "Balm",
+                     "version":  "21.0.63",
+                     "fileName":  "balm-fabric-1.21.1-21.0.63.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/MBAkmtvl/versions/R6U3hZRZ/balm-fabric-1.21.1-21.0.63.jar",
+                     "sha256":  "4c3604961b74e9cbc91efb1a93daa2f4e55354a46afc93cb74f0de543fd86391",
+                     "sizeBytes":  809717,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "balm-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "beautify",
+                     "modIds":  [
+                                    "beautify"
+                                ],
+                     "displayName":  "Beautify",
+                     "version":  "2.0.0+1.21.1",
+                     "fileName":  "beautify-2.0.0+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/DhSSvaxs/versions/ZyaUkJxq/beautify-2.0.0%2B1.21.1.jar",
+                     "sha256":  "134da1a8e3841f0a14004e839bd1e0a9d091cc5769a82b0052cebda2804ac4fd",
+                     "sizeBytes":  837607,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "beautify-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "better_pokedex_scanner",
+                     "modIds":  [
+                                    "better_pokedex_scanner"
+                                ],
+                     "displayName":  "Better Pokédex Scanner",
+                     "version":  "1.0.0",
+                     "fileName":  "better-pokedex-scanner-1.0.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/lESGhLxI/versions/fvFI487Y/better-pokedex-scanner-1.0.0.jar",
+                     "sha256":  "aca37fa43fe9226cf99f75f194bf6cb9ec27d71dad1ae6c732d0791636231180",
+                     "sizeBytes":  350293,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "better-pokedex-scanner-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "betterbeds",
+                     "modIds":  [
+                                    "betterbeds"
+                                ],
+                     "displayName":  "Better Beds",
+                     "version":  "1.4.0",
+                     "fileName":  "betterbeds-fabric-1.4.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/kKwy3HU9/versions/ZPmX9Uy3/betterbeds-fabric-1.4.0.jar",
+                     "sha256":  "d707f5df1c45150eb18b3135380519e74dd9103673a71032ef3de2b9038424aa",
+                     "sizeBytes":  39918,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "betterbeds-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "betterf1",
+                     "modIds":  [
+                                    "betterf1"
+                                ],
+                     "displayName":  "BetterF1",
+                     "version":  "1.1",
+                     "fileName":  "BetterF1-Fabric-1.1+1.21.7.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/2JIeCmxb/versions/S81P3LsG/BetterF1-Fabric-1.1%2B1.21.7.jar",
+                     "sha256":  "abfb3f37f130ae4dea89e282f1d0fc0e9c4b2235762745931329defb9387bbdf",
+                     "sizeBytes":  22834,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "BetterF1-Fabric-*+1.21.7.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "betterf3",
+                     "modIds":  [
+                                    "betterf3"
+                                ],
+                     "displayName":  "BetterF3",
+                     "version":  "11.0.3",
+                     "fileName":  "BetterF3-11.0.3-Fabric-1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/8shC1gFX/versions/phATjGhF/BetterF3-11.0.3-Fabric-1.21.1.jar",
+                     "sha256":  "e0e4bb25fbe23b16b7574474ee9fde5cdc9757d05885bc43978f4ea5e8e258ad",
+                     "sizeBytes":  1810710,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "BetterF3-*-Fabric-1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "betterthirdperson",
+                     "modIds":  [
+                                    "betterthirdperson"
+                                ],
+                     "displayName":  "Better Third Person",
+                     "version":  "1.9.0",
+                     "fileName":  "BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/G1s2WpNo/versions/QZTn8cTa/BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+                     "sha256":  "f9ec9dc6508b20d32a3c770ecc77641e8f87c98e298d58e2757a6ef14abbb457",
+                     "sizeBytes":  52188,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "BetterThirdPerson-Fabric-1.21-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "biome_replacer",
+                     "modIds":  [
+                                    "biome_replacer"
+                                ],
+                     "displayName":  "Biome Replacer",
+                     "version":  "2.1-hippo",
+                     "fileName":  "biomereplacer-2.1-hippo-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/DAXbR0Wj/versions/IeQCQzcl/biomereplacer-2.1-hippo-fabric.jar",
+                     "sha256":  "ec6eeda3d4d32d9740c3e6f24177db3fcfa06866f73e341c0ad4ea090d0055ac",
+                     "sizeBytes":  138694,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "biomereplacer-*-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "brb",
+                     "modIds":  [
+                                    "brb"
+                                ],
+                     "displayName":  "Better Recipe Book",
+                     "version":  "1.10.0-rc5+1.21",
+                     "fileName":  "brb-1.10.0-rc5+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/vWIaVOTE/versions/rj0f0Vtq/brb-1.10.0-rc5%2B1.21.jar",
+                     "sha256":  "7ddc4761bf5ca59c34703d9586e6edaf6c7a7a3939ed7cdb6c103ab9fec6707b",
+                     "sizeBytes":  1213168,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "brb-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "c2me",
+                     "modIds":  [
+                                    "c2me"
+                                ],
+                     "displayName":  "Concurrent Chunk Management Engine",
+                     "version":  "0.4.0-alpha.0.16+1.21.1",
+                     "fileName":  "c2me-fabric-mc1.21.1-0.4.0-alpha.0.16.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/VSNURh3q/versions/W5bA0Azw/c2me-fabric-mc1.21.1-0.4.0-alpha.0.16.jar",
+                     "sha256":  "5fa49457ad61f3c3e732dd1adfc7f24a04cb6e3f3965c3cf72ccd2413a90d764",
+                     "sizeBytes":  3745453,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "c2me-fabric-mc1.21.1-0.4.0-alpha.0.16.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "capture_xp",
+                     "modIds":  [
+                                    "capture_xp"
+                                ],
+                     "displayName":  "Cobblemon Capture XP",
+                     "version":  "1.7.3-fabric-1.3.0",
+                     "fileName":  "capturexp-fabric-1.7.3-1.3.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/LBl4Qguc/versions/hjQp9Aq3/capturexp-fabric-1.7.3-1.3.0.jar",
+                     "sha256":  "8f5ab9ce3ea2957f75033f3adc8a6195d303a96c3a8c1eebd1d5ee254bf88cf7",
+                     "sizeBytes":  22848,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "capturexp-fabric-1.7.3-1.3.0.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "carved_wood",
+                     "modIds":  [
+                                    "carved_wood"
+                                ],
+                     "displayName":  "Carved Wood",
+                     "version":  "1.9.7",
+                     "fileName":  "Carved Wood-fabric-1.21.1-1.9.7.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/WuwijfrW/versions/BTdFVMG0/Carved%20Wood-fabric-1.21.1-1.9.7.jar",
+                     "sha256":  "95b87fb36380cf41dce93635b76d5839cf236199c516f7bae7341a539f4938f9",
+                     "sizeBytes":  2888264,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Carved Wood-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "catchindicator",
+                     "modIds":  [
+                                    "catchindicator"
+                                ],
+                     "displayName":  "Catch Indicator",
+                     "version":  "1.7.0",
+                     "fileName":  "catchindicator-fabric-1.7.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/tpTcu2PM/versions/PMZ87iqE/catchindicator-fabric-1.7.0.jar",
+                     "sha256":  "bcebcfa5692f93de8d8aff33973510517a7434d48656c5ad167d33df841bc122",
+                     "sizeBytes":  318477,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "catchindicator-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "catchrate-display",
+                     "modIds":  [
+                                    "catchrate-display"
+                                ],
+                     "displayName":  "Cobblemon Catch Rate Display",
+                     "version":  "2.8.22",
+                     "fileName":  "catchrate-display-fabric-2.8.22.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/vADO40xp/versions/4MuGKLQg/catchrate-display-fabric-2.8.22.jar",
+                     "sha256":  "0a2c2ae61e6796a3b524556022c28dada75da73d6391613849cfd98230d91210",
+                     "sizeBytes":  260470,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "catchrate-display-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cloth-config",
+                     "modIds":  [
+                                    "cloth-config"
+                                ],
+                     "displayName":  "Cloth Config v15",
+                     "version":  "15.0.140",
+                     "fileName":  "cloth-config-15.0.140-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar",
+                     "sha256":  "33894e95da3af59014b39d126586d5241e07ea39f8618763e30dab637405f95f",
+                     "sizeBytes":  1157166,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cloth-config-*-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblecuisine",
+                     "modIds":  [
+                                    "cobblecuisine"
+                                ],
+                     "displayName":  "CobbleCuisine",
+                     "version":  "2.0.1",
+                     "fileName":  "cobblecuisine-2.0.1-1.7.rc1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/dlx62Wp3/versions/KQwSroDP/cobblecuisine-2.0.1-1.7-rc1.jar",
+                     "sha256":  "081d9ba2ddaae3f9b3240c0b4d49b75c4f93ab2b6e9bbb7bb69a3bc05520e1d9",
+                     "sizeBytes":  683115,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblecuisine-*-1.7.rc1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobbledollars",
+                     "modIds":  [
+                                    "cobbledollars"
+                                ],
+                     "displayName":  "CobbleDollars",
+                     "version":  "2.0.0+Beta-5.1+1.21.1",
+                     "fileName":  "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/s7N7AsqL/versions/cqsHXSXe/CobbleDollars-fabric-2.0.0%2BBeta-5.1%2B1.21.1.jar",
+                     "sha256":  "5d8690980ecc79b5f33005dd274d148d0b9b7713ff5e8223c7011aa8bb08401a",
+                     "sizeBytes":  369528,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "CobbleDollars-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblefurnies",
+                     "modIds":  [
+                                    "cobblefurnies"
+                                ],
+                     "displayName":  "CobbleFurnies",
+                     "version":  "1.2",
+                     "fileName":  "CobbleFurnies-fabric-1.2.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/AXY1OO9m/versions/54k31lEX/CobbleFurnies-fabric-1.2.jar",
+                     "sha256":  "c1230a58ca2369b973bfade68a0ffcac86ffcbf9dd2a845999ed8c5348bfef93",
+                     "sizeBytes":  2337235,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "CobbleFurnies-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblemon",
+                     "modIds":  [
+                                    "cobblemon"
+                                ],
+                     "displayName":  "Cobblemon",
+                     "version":  "1.7.3+1.21.1",
+                     "fileName":  "Cobblemon-fabric-1.7.3+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/MdwFAVRL/versions/kF7CvxTo/Cobblemon-fabric-1.7.3%2B1.21.1.jar",
+                     "sha256":  "f7c25955176badc444ad6211fc556514fedbdba776227f105fe899f8819d74e3",
+                     "sizeBytes":  135801550,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Cobblemon-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblemon-additions",
+                     "modIds":  [
+                                    "cobblemon-additions"
+                                ],
+                     "displayName":  "Cobblemon Additions",
+                     "version":  "4.1.6",
+                     "fileName":  "cobblemon-additions-4.1.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/W2pr9jyL/versions/degN5DK4/cobblemon-additions-4.1.6.jar",
+                     "sha256":  "c40eeee13943aa3b2ed532a25de5b55f5db4c76222e2a61c98d0bc35c028357d",
+                     "sizeBytes":  1961229,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblemon-additions-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblemon-battle-extras",
+                     "modIds":  [
+                                    "cobblemon-battle-extras"
+                                ],
+                     "displayName":  "Cobblemon Battle Extras",
+                     "version":  "1.13.45",
+                     "fileName":  "cobblemon-battle-extras-fabric-1.13.45.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/2iY8VFqL/versions/Sf5W9mRS/cobblemon-battle-extras-fabric-1.13.45.jar",
+                     "sha256":  "099c3dafd5c7d29e8d91f954a9598565fdd07dac235bb9c49ab305d9af37f826",
+                     "sizeBytes":  1515972,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblemon-battle-extras-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblemonbattlepositions",
+                     "modIds":  [
+                                    "cobblemonbattlepositions"
+                                ],
+                     "displayName":  "Cobblemon Battle Positions",
+                     "version":  "1.1.2",
+                     "fileName":  "cobblemon-battle-positions-1.1.3.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobblemon-battle-positions-1.1.3.jar",
+                     "sha256":  "d76bbd753763dde4a552d1a86b8bc6ceee9abcb00fa1bd29b6c2e389079437ed",
+                     "sizeBytes":  58572,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblemon-battle-positions-1.1.3.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblemonraiddens",
+                     "modIds":  [
+                                    "cobblemonraiddens"
+                                ],
+                     "displayName":  "Cobblemon Raid Dens",
+                     "version":  "0.11.3+1.21.1",
+                     "fileName":  "cobblemonraiddens-fabric-0.11.3+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/GebWh45l/versions/Lecb595b/cobblemonraiddens-fabric-0.11.3%2B1.21.1.jar",
+                     "sha256":  "0a09f8ae544412e2f0f599a38b033928ec0a553ad53506c10bca3db734877c7b",
+                     "sizeBytes":  2690197,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblemonraiddens-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobblenav",
+                     "modIds":  [
+                                    "cobblenav"
+                                ],
+                     "displayName":  "Cobblenav",
+                     "version":  "2.3.3",
+                     "fileName":  "cobblenav-fabric-2.3.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/bI8Nt3uA/versions/cGFERrtC/cobblenav-fabric-2.3.3.jar",
+                     "sha256":  "e66eb486f5cfbeef2215910193eba0000c191bbf774fa59f3e0b955ce13cae45",
+                     "sizeBytes":  1090821,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobblenav-fabric-*.jar"
                                              ]
                  },
                  {
                      "id":  "cobbleverse_claim",
-                     "displayName":  "코블버스 건차",
+                     "modIds":  [
+                                    "cobbleverse_claim"
+                                ],
+                     "displayName":  "Cobbleverse Claim",
                      "version":  "0.2.1",
                      "fileName":  "cobbleverse-claim-0.2.1.jar",
                      "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-claim-0.2.1.jar",
@@ -34,16 +520,1811 @@
                                              ]
                  },
                  {
+                     "id":  "cobbleverse_ui",
+                     "modIds":  [
+                                    "cobbleverse_ui"
+                                ],
+                     "displayName":  "Cobbleverse UI",
+                     "version":  "0.2.22",
+                     "fileName":  "cobbleverse-ui-0.2.22.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-ui-0.2.22.jar",
+                     "sha256":  "6575b9e8deab5c208cf2b9b9b07c923ce76b0bcabfb013430526b99425f1890f",
+                     "sizeBytes":  516382,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "cobbleverse-ui-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobbleversebadges",
+                     "modIds":  [
+                                    "cobbleversebadges"
+                                ],
+                     "displayName":  "COBBLEVERSE Badges",
+                     "version":  "1.3",
+                     "fileName":  "CobbleverseBadges-1.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/PHT3Zj0r/versions/3aQ0cMqp/CobbleverseBadges-1.3.jar",
+                     "sha256":  "d215d075d4ae80a4ed5e20cb5caf442bb3f3607d2a41dc134ebad035f6a8da77",
+                     "sizeBytes":  137015,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "CobbleverseBadges-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cobbreeding",
+                     "modIds":  [
+                                    "cobbreeding"
+                                ],
+                     "displayName":  "Cobbreeding",
+                     "version":  "2.2.2",
+                     "fileName":  "Cobbreeding-fabric-2.2.2.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ItmVb4zY/versions/RNbPHodv/Cobbreeding-fabric-2.2.2.jar",
+                     "sha256":  "6ef5d451535a5066ada4676d1782664f167cef9f0f7b8fcbc41471934a0a47db",
+                     "sizeBytes":  475560,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Cobbreeding-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "comforts",
+                     "modIds":  [
+                                    "comforts"
+                                ],
+                     "displayName":  "Comforts",
+                     "version":  "9.0.5+1.21.1",
+                     "fileName":  "comforts-fabric-9.0.5+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/SaCpeal4/versions/LUPOTXbk/comforts-fabric-9.0.5%2B1.21.1.jar",
+                     "sha256":  "73ff17028967a2e30731ea79aee2e18dd8e2d59a5dcd075facd6491cae1b2231",
+                     "sizeBytes":  914494,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "comforts-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "continuity",
+                     "modIds":  [
+                                    "continuity"
+                                ],
+                     "displayName":  "Continuity",
+                     "version":  "3.0.0+1.21",
+                     "fileName":  "continuity-3.0.0+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/1IjD5062/versions/kSPJ4hQv/continuity-3.0.0%2B1.21.jar",
+                     "sha256":  "99fd46b834874d167ea2349a9a72947cbfa7192f927aa99bbeb4b0637aa208d4",
+                     "sizeBytes":  1014044,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "continuity-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "controlling",
+                     "modIds":  [
+                                    "controlling"
+                                ],
+                     "displayName":  "Controlling",
+                     "version":  "19.0.5",
+                     "fileName":  "Controlling-fabric-1.21.1-19.0.5.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/xv94TkTM/versions/hGJDoW2W/Controlling-fabric-1.21.1-19.0.5.jar",
+                     "sha256":  "c0150c5bfbc77f27b92f24a5a9c2edc462eba8c8f912635757c5deb3a0a93f8d",
+                     "sizeBytes":  83679,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Controlling-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "cozyhome",
+                     "modIds":  [
+                                    "cozyhome"
+                                ],
+                     "displayName":  "Cozy Home",
+                     "version":  "1.1.20",
+                     "fileName":  "Luckys-Cozyhome-Refurnished-1.1.20.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/TNcLBDkY/versions/jJUWZCaQ/Luckys-Cozyhome-Refurnished-1.1.20.jar",
+                     "sha256":  "0915e3e54c12fe40622cab94005418d32cbde011fa9c2d7c27756eb7d5313a66",
+                     "sizeBytes":  3121070,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Luckys-Cozyhome-Refurnished-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "customsplashscreen",
+                     "modIds":  [
+                                    "customsplashscreen"
+                                ],
+                     "displayName":  "Custom Splash Screen",
+                     "version":  "2.2.0",
+                     "fileName":  "customsplashscreen-2.2.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/BwFQLeCh/versions/OIFSv9om/customsplashscreen-2.2.0.jar",
+                     "sha256":  "142aacb23fc97e467ded7e279a72b00252018c43d12d803d928d07d4fe8d8678",
+                     "sizeBytes":  660554,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "customsplashscreen-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "debugify",
+                     "modIds":  [
+                                    "debugify"
+                                ],
+                     "displayName":  "Debugify",
+                     "version":  "1.21.1+1.0",
+                     "fileName":  "Debugify-1.21.1+1.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/QwxR6Gcd/versions/dO7QNiof/Debugify-1.21.1%2B1.0.jar",
+                     "sha256":  "e61e83875190150337a2366d9374f04865654de7bdf83e6ab29d9915899f8d7a",
+                     "sizeBytes":  292202,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Debugify-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "defaultoptions",
+                     "modIds":  [
+                                    "defaultoptions"
+                                ],
+                     "displayName":  "Default Options",
+                     "version":  "21.1.7",
+                     "fileName":  "defaultoptions-fabric-1.21.1-21.1.7.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/WEg59z5b/versions/xaqHFEAN/defaultoptions-fabric-1.21.1-21.1.7.jar",
+                     "sha256":  "8fff8fad699028a6578c61df3d1690d6fb5abbdc9a7c436e94cc9f51138be790",
+                     "sizeBytes":  105044,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "defaultoptions-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "easy_npc",
+                     "modIds":  [
+                                    "easy_npc"
+                                ],
+                     "displayName":  "Easy NPC",
+                     "version":  "6.25.0",
+                     "fileName":  "easy_npc-fabric-1.21.1-6.25.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Epm6R3P2/versions/pxt6JAIU/easy_npc-fabric-1.21.1-6.25.0.jar",
+                     "sha256":  "fda23a6c84a4ef51a9e16ecd8e185cbdba74f49b38bf0c02ad809e4cfd09fa7d",
+                     "sizeBytes":  2190911,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "easy_npc-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "easy_npc_bundle",
+                     "modIds":  [
+                                    "easy_npc_bundle"
+                                ],
+                     "displayName":  "Easy NPC (Bundle)",
+                     "version":  "6.25.0",
+                     "fileName":  "easy_npc_bundle-fabric-1.21.1-6.25.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/CgGEe1h3/versions/ocaFsuHW/easy_npc_bundle-fabric-1.21.1-6.25.0.jar",
+                     "sha256":  "fb03f9b81dbffdded2f8757ad0d37682e75efd34e8866af9ddcc90d9d5d0c73c",
+                     "sizeBytes":  25260,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "easy_npc_bundle-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "easy_npc_config_ui",
+                     "modIds":  [
+                                    "easy_npc_config_ui"
+                                ],
+                     "displayName":  "Easy NPC: Config UI",
+                     "version":  "6.25.0",
+                     "fileName":  "easy_npc_config_ui-fabric-1.21.1-6.25.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/uTGjf7vA/versions/GemJghTO/easy_npc_config_ui-fabric-1.21.1-6.25.0.jar",
+                     "sha256":  "8c64c13e7aee50350f2ae899010856682434c46927039820a171e7a06b5dbcbb",
+                     "sizeBytes":  935879,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "easy_npc_config_ui-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "entity_model_features",
+                     "modIds":  [
+                                    "entity_model_features"
+                                ],
+                     "displayName":  "Entity Model Features",
+                     "version":  "3.2.4",
+                     "fileName":  "entity_model_features-3.2.4-1.21-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/4I1XuqiY/versions/NLDNY8vg/entity_model_features-3.2.4-1.21-fabric.jar",
+                     "sha256":  "3c3f800b4bf911a158435c36dac0cf4176bec36d837c0696fdfae39d7ec5f976",
+                     "sizeBytes":  565280,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "entity_model_features-*-1.21-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "entity_texture_features",
+                     "modIds":  [
+                                    "entity_texture_features"
+                                ],
+                     "displayName":  "Entity Texture Features",
+                     "version":  "7.1",
+                     "fileName":  "entity_texture_features_1.21-fabric-7.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/BVzZfTc1/versions/udcdeUXw/entity_texture_features_1.21-fabric-7.1.jar",
+                     "sha256":  "d1b54ad6fd34eaf7187fb62556f2c5cacdc2ea3023a6217e3b2d823285aea148",
+                     "sizeBytes":  745421,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "entity_texture_features_1.21-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "entityculling",
+                     "modIds":  [
+                                    "entityculling"
+                                ],
+                     "displayName":  "EntityCulling",
+                     "version":  "1.10.5",
+                     "fileName":  "entityculling-fabric-1.10.5-mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/NNAgCjsB/versions/hsWvcyFJ/entityculling-fabric-1.10.5-mc1.21.1.jar",
+                     "sha256":  "cfb5491f5ed9609784cf3d6a926bef046ca80cb74c7856e6134335d7d0ce839e",
+                     "sizeBytes":  1595131,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "entityculling-fabric-*-mc1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "euphoria_patcher",
+                     "modIds":  [
+                                    "euphoria_patcher"
+                                ],
+                     "displayName":  "Euphoria Patcher",
+                     "version":  "1.9.3-r5.8.1-fabric",
+                     "fileName":  "EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/4H6sumDB/versions/7GNWrkGL/EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+                     "sha256":  "b42bd00c7ab6e044d21f845dedc58a4524e45643f3685bf1c2343098e74d662e",
+                     "sizeBytes":  4296552,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "EuphoriaPatcher-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "explorerscompass",
+                     "modIds":  [
+                                    "explorerscompass"
+                                ],
+                     "displayName":  "Explorer\u0027s Compass",
+                     "version":  "1.21.1-2.6.0-fabric",
+                     "fileName":  "ExplorersCompass-1.21.1-2.6.0-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/RV1qfVQ8/versions/qSRKiE4D/ExplorersCompass-1.21.1-2.6.0-fabric.jar",
+                     "sha256":  "f6327bb26c3ea5981792f1a5a7ada4fcd78b0e4fe3a563612122d37a68d46c4b",
+                     "sizeBytes":  177481,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ExplorersCompass-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fabric-api",
+                     "modIds":  [
+                                    "fabric-api"
+                                ],
+                     "displayName":  "Fabric API",
+                     "version":  "0.116.13+1.21.1",
+                     "fileName":  "fabric-api-0.116.13+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/P7dR8mSH/versions/FHknjVVa/fabric-api-0.116.13%2B1.21.1.jar",
+                     "sha256":  "adaa7d67d7b5a9dd2d19f3e2139bf3e63480e09c005c77ada014067443741863",
+                     "sizeBytes":  2427135,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fabric-api-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fabric-language-kotlin",
+                     "modIds":  [
+                                    "fabric-language-kotlin"
+                                ],
+                     "displayName":  "Fabric Language Kotlin",
+                     "version":  "1.13.12+kotlin.2.4.0",
+                     "fileName":  "fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Ha28R6CL/versions/Pd0xrHCw/fabric-language-kotlin-1.13.12%2Bkotlin.2.4.0.jar",
+                     "sha256":  "36c5dd8b728e3470d2882ae63119b93a20500fc0ea6f5c945c12bf65b5ab1832",
+                     "sizeBytes":  8076848,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fabric-language-kotlin-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fancymenu",
+                     "modIds":  [
+                                    "fancymenu"
+                                ],
+                     "displayName":  "FancyMenu",
+                     "version":  "3.9.7",
+                     "fileName":  "fancymenu_fabric_3.9.7_MC_1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Wq5SjeWM/versions/1zLdbmo6/fancymenu_fabric_3.9.7_MC_1.21.1.jar",
+                     "sha256":  "4859558342d3374bec1d8a6338e2acf4a878d244e4a7ef488cd38d372b8ce0d6",
+                     "sizeBytes":  25747203,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fancymenu_fabric_*_MC_1.21.1.jar"
+                                             ]
+                 },
+                 {
                      "id":  "farm_and_charm",
-                     "displayName":  "Let\u0027s Do: Farm \u0026 Charm",
+                     "modIds":  [
+                                    "farm_and_charm"
+                                ],
+                     "displayName":  "[Let\u0027s Do] Farm \u0026 Charm",
                      "version":  "1.1.22",
                      "fileName":  "letsdo-farm_and_charm-fabric-1.1.22.jar",
-                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/letsdo-farm_and_charm-fabric-1.1.22.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/HJetCzWo/versions/Ryy1J2BQ/letsdo-farm_and_charm-fabric-1.1.22.jar",
                      "sha256":  "34ba11ad463cc02b046c662bf3e767107b23f87d08a275dc4737b89229ff7055",
                      "sizeBytes":  2557418,
                      "required":  true,
                      "managedFilePatterns":  [
                                                  "letsdo-farm_and_charm-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "ferritecore",
+                     "modIds":  [
+                                    "ferritecore"
+                                ],
+                     "displayName":  "FerriteCore",
+                     "version":  "7.0.3",
+                     "fileName":  "ferritecore-7.0.3-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar",
+                     "sha256":  "98c3ab1d5aab8f14b5d082d3f1a467727fd335f02d124555c94339761c4c18f2",
+                     "sizeBytes":  123450,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ferritecore-*-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fightorflight",
+                     "modIds":  [
+                                    "fightorflight"
+                                ],
+                     "displayName":  "Cobblemon Fight or Flight Fabric",
+                     "version":  "0.10.9",
+                     "fileName":  "fightorflight-fabric-0.10.9.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/cTdIg5HZ/versions/aLKGVSng/fightorflight-fabric-0.10.9.jar",
+                     "sha256":  "7eee034d17281b43324cbdcc41a3836b6c44a93798d40a608538ed12a72279c1",
+                     "sizeBytes":  1424525,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fightorflight-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "forgeconfigapiport",
+                     "modIds":  [
+                                    "forgeconfigapiport"
+                                ],
+                     "displayName":  "Forge Config API Port",
+                     "version":  "21.1.6",
+                     "fileName":  "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+                     "sha256":  "2e3a8f0e3bda85a7d722720e7ce879cbd9d028d9395c6fc224d329b3c982d9b1",
+                     "sizeBytes":  633065,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ForgeConfigAPIPort-v*-1.21.1-Fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "forgivingvoid",
+                     "modIds":  [
+                                    "forgivingvoid"
+                                ],
+                     "displayName":  "Forgiving Void",
+                     "version":  "21.1.7",
+                     "fileName":  "forgivingvoid-fabric-1.21.1-21.1.7.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/1vkzEZjE/versions/HGbKoEgt/forgivingvoid-fabric-1.21.1-21.1.7.jar",
+                     "sha256":  "ee45266cc7c10b0a17d9a87b021a57fb8616529e4c33af0fff5a506de71960b1",
+                     "sizeBytes":  78531,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "forgivingvoid-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fusion",
+                     "modIds":  [
+                                    "fusion"
+                                ],
+                     "displayName":  "Fusion",
+                     "version":  "1.2.12",
+                     "fileName":  "fusion-1.2.12-fabric-mc1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/p19vrgc2/versions/6fQXv7Yl/fusion-1.2.12-fabric-mc1.21.jar",
+                     "sha256":  "904b53bd8e0aacf200c700997c7467bc0c66cca1fb4a17c9999afb8eb62942e8",
+                     "sizeBytes":  515411,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fusion-*-fabric-mc1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "fzzy_config",
+                     "modIds":  [
+                                    "fzzy_config"
+                                ],
+                     "displayName":  "Fzzy Config",
+                     "version":  "0.7.6+1.21",
+                     "fileName":  "fzzy_config-0.7.6+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/hYykXjDp/versions/kOmySYD4/fzzy_config-0.7.6%2B1.21.jar",
+                     "sha256":  "323dc065cc3aaeb7f908be7e5d31070a25d4188b433ed770a79700ef8f5e8f7d",
+                     "sizeBytes":  2365335,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "fzzy_config-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "geckolib",
+                     "modIds":  [
+                                    "geckolib"
+                                ],
+                     "displayName":  "GeckoLib 4",
+                     "version":  "4.9.2",
+                     "fileName":  "geckolib-fabric-1.21.1-4.9.2.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/8BmcQJ2H/versions/dnJdtm0u/geckolib-fabric-1.21.1-4.9.2.jar",
+                     "sha256":  "eac4cf55e1cb99b22cb91ea87c774d2a670c1711a80f4aff50e6ad56b6c58e7e",
+                     "sizeBytes":  660416,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "geckolib-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "globalpacks",
+                     "modIds":  [
+                                    "globalpacks"
+                                ],
+                     "displayName":  "Global Data- \u0026 Resourcepacks",
+                     "version":  "21.0.6",
+                     "fileName":  "globalpacks-fabric-1.21.1-21.0.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/NRLPy2mk/versions/ErTctr3A/globalpacks-fabric-1.21.1-21.0.6.jar",
+                     "sha256":  "391d960afb1d8f0b63ccfb677970512d68642102b6928a4830ebcd6d3fdba2cc",
+                     "sizeBytes":  394707,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "globalpacks-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "handcrafted",
+                     "modIds":  [
+                                    "handcrafted"
+                                ],
+                     "displayName":  "Handcrafted",
+                     "version":  "4.0.3",
+                     "fileName":  "handcrafted-fabric-1.21.1-4.0.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/pJmCFF0p/versions/f0pKpUWd/handcrafted-fabric-1.21.1-4.0.3.jar",
+                     "sha256":  "9609c27e2eeaed4c633ade2d68ad980cfbed0442a10239846a67e9c62bc1b230",
+                     "sizeBytes":  7127377,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "handcrafted-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "highlight",
+                     "modIds":  [
+                                    "highlight"
+                                ],
+                     "displayName":  "Highlight",
+                     "version":  "3.0.0",
+                     "fileName":  "highlight-fabric-1.21-3.0.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Vz96hXMh/versions/O0nda3pt/highlight-fabric-1.21-3.0.0.jar",
+                     "sha256":  "08932afc913f74e9676b9a59a87bdf817d959cf6d861a9269897778240f11df2",
+                     "sizeBytes":  457352,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "highlight-fabric-1.21-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "hugestructureblocks",
+                     "modIds":  [
+                                    "hugestructureblocks"
+                                ],
+                     "displayName":  "Huge Structure Blocks",
+                     "version":  "1.1.6",
+                     "fileName":  "huge-structure-blocks-fabric-1.1.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/AMLtKGdJ/versions/jZrAT0D5/huge-structure-blocks-fabric-1.1.6.jar",
+                     "sha256":  "759071bd7b1db4367f232db35872ce6a30e8adee57a8543d0967d0b39b37819d",
+                     "sizeBytes":  100230,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "huge-structure-blocks-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "iceberg",
+                     "modIds":  [
+                                    "iceberg"
+                                ],
+                     "displayName":  "Iceberg",
+                     "version":  "1.3.2",
+                     "fileName":  "Iceberg-1.21.1-fabric-1.3.2.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/5faXoLqX/versions/7ITFAyW8/Iceberg-1.21.1-fabric-1.3.2.jar",
+                     "sha256":  "9214790af6fb75c19ef6b95e0e47999addf018e8c7a1630a5118c4252e6d8d36",
+                     "sizeBytes":  413302,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Iceberg-1.21.1-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "immediatelyfast",
+                     "modIds":  [
+                                    "immediatelyfast"
+                                ],
+                     "displayName":  "ImmediatelyFast",
+                     "version":  "1.6.11+1.21.1",
+                     "fileName":  "ImmediatelyFast-Fabric-1.6.11+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/5ZwdcRci/versions/ATB4eNEP/ImmediatelyFast-Fabric-1.6.11%2B1.21.1.jar",
+                     "sha256":  "05a5f3c716ae631af3cc925c8144894368c632156f2d581dd8295cc223ea2f6d",
+                     "sizeBytes":  336763,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ImmediatelyFast-Fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "infinite-music",
+                     "modIds":  [
+                                    "infinite-music"
+                                ],
+                     "displayName":  "Infinite Music",
+                     "version":  "0.4.6",
+                     "fileName":  "infinite-music-0.4.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/OJLdOa8k/versions/cIfcDLaq/infinite-music-0.4.6.jar",
+                     "sha256":  "f90123fa679e170163f976819c851fc4bd6840d19cf95dde3ff8fe3682eed343",
+                     "sizeBytes":  45913,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "infinite-music-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "interactic",
+                     "modIds":  [
+                                    "interactic"
+                                ],
+                     "displayName":  "Interactic",
+                     "version":  "0.2.3+1.21",
+                     "fileName":  "interactic-0.2.3+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ErpAAAaf/versions/PGo6qQqQ/interactic-0.2.3%2B1.21.jar",
+                     "sha256":  "fad6a5321f0a69c70dcbe62c631166b6549b1d9656929c011e6c1d57b1dea0da",
+                     "sizeBytes":  118011,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "interactic-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "iris",
+                     "modIds":  [
+                                    "iris"
+                                ],
+                     "displayName":  "Iris",
+                     "version":  "1.8.14-beta.1+mc1.21.1",
+                     "fileName":  "iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/YL57xq9U/versions/bAo1Qhte/iris-fabric-1.8.14-beta.1%2Bmc1.21.1.jar",
+                     "sha256":  "0ceb694040b4628bf3fa02286cfe5f0db833195669ab07f8caa4001359763eff",
+                     "sizeBytes":  2791343,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "iris-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "konkrete",
+                     "modIds":  [
+                                    "konkrete"
+                                ],
+                     "displayName":  "Konkrete",
+                     "version":  "1.9.9",
+                     "fileName":  "konkrete_fabric_1.9.9_MC_1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/J81TRJWm/versions/Qvrc7DuG/konkrete_fabric_1.9.9_MC_1.21.jar",
+                     "sha256":  "06e912f99d59bf81c0676f1db936150ad4443d5674f59b3c55604540ba620841",
+                     "sizeBytes":  786695,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "konkrete_fabric_*_MC_1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "krypton",
+                     "modIds":  [
+                                    "krypton"
+                                ],
+                     "displayName":  "Krypton",
+                     "version":  "0.2.8",
+                     "fileName":  "krypton-0.2.8.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar",
+                     "sha256":  "94f195819b24e5da64effdc9da15cdd84836cc75e8ff0fd098bab6bc2f49e3fe",
+                     "sizeBytes":  161045,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "krypton-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "legendarymonuments",
+                     "modIds":  [
+                                    "legendarymonuments"
+                                ],
+                     "displayName":  "Legendary Monuments",
+                     "version":  "Cobbleverse",
+                     "fileName":  "LegendaryMonuments-Cobbleverse.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/m6RyHSbV/versions/RtYJBrxd/LegendaryMonuments-Cobbleverse.jar",
+                     "sha256":  "34901d7c95bff58242384c44abc6acc50c2e06310b85f7e80bcd70f7c7e5b0b6",
+                     "sizeBytes":  5736792,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "LegendaryMonuments-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "lenientdeath",
+                     "modIds":  [
+                                    "lenientdeath"
+                                ],
+                     "displayName":  "Lenient Death",
+                     "version":  "1.2.5+1.21.1",
+                     "fileName":  "lenientdeath-1.2.5+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Bfi1KBJV/versions/FUbtsgt9/lenientdeath-1.2.5%2B1.21.1.jar",
+                     "sha256":  "117175de6d7a8cc9cf36d48fd55a8460183dd30f4d25c0e7230ba8fe470f79b4",
+                     "sizeBytes":  920915,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "lenientdeath-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "libjf",
+                     "modIds":  [
+                                    "libjf"
+                                ],
+                     "displayName":  "LibJF",
+                     "version":  "3.17.5",
+                     "fileName":  "libjf-3.17.5.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/WKwQAwke/versions/WRFFw4eh/libjf-3.17.5.jar",
+                     "sha256":  "93789892f45d03bec95894ab644f9f909868e84f1a0755a61bdf22ae378629f5",
+                     "sizeBytes":  1282450,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "libjf-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "lithium",
+                     "modIds":  [
+                                    "lithium"
+                                ],
+                     "displayName":  "Lithium",
+                     "version":  "0.15.4+mc1.21.1",
+                     "fileName":  "lithium-fabric-0.15.4+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar",
+                     "sha256":  "92329d98c57f5a22091a0adb509fdb1d60113a5602c708b799b13134bad13baa",
+                     "sizeBytes":  797454,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "lithium-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "lumymon",
+                     "modIds":  [
+                                    "lumymon"
+                                ],
+                     "displayName":  "LumyMon",
+                     "version":  "0.6.6",
+                     "fileName":  "LumyMon-0.6.6.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/QAX8WiBc/versions/SSS3twZY/LumyMon-0.6.6.jar",
+                     "sha256":  "00ad0ddb4bbac26b6f1b83ad80255008be98ab72056d89de3eb9107b01d7eefb",
+                     "sizeBytes":  2331858,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "LumyMon-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "lumyrei",
+                     "modIds":  [
+                                    "lumyrei"
+                                ],
+                     "displayName":  "LumyREI",
+                     "version":  "1.1.3",
+                     "fileName":  "LumyREI-1.1.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/FVADf9wU/versions/PnYguaC2/LumyREI-1.1.3.jar",
+                     "sha256":  "e6ac62bb3a858af78948397b0310efb281b911f4cda31392c989c9cdaf9ed4b1",
+                     "sizeBytes":  66283,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "LumyREI-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "mega_showdown",
+                     "modIds":  [
+                                    "mega_showdown"
+                                ],
+                     "displayName":  "Cobblemon:Mega Showdown",
+                     "version":  "1.8.4+1.7.3+1.21.1",
+                     "fileName":  "mega_showdown-fabric-1.8.4+1.7.3+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/SszvX85I/versions/Y6di9Ram/mega_showdown-fabric-1.8.4%2B1.7.3%2B1.21.1.jar",
+                     "sha256":  "0cf4568128805816a8d6f3cbab08374b2e0261784c3d6e8c091c602f79bebf51",
+                     "sizeBytes":  17213370,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "mega_showdown-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "melody",
+                     "modIds":  [
+                                    "melody"
+                                ],
+                     "displayName":  "Melody",
+                     "version":  "1.0.10",
+                     "fileName":  "melody_fabric_1.0.10_MC_1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/CVT4pFB2/versions/OqxSeb4n/melody_fabric_1.0.10_MC_1.21.jar",
+                     "sha256":  "223ab859b9cc246d8d6e5cec5e734f97be3aac545de6cda7743750262428ed83",
+                     "sizeBytes":  188035,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "melody_fabric_*_MC_1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "midnightlib",
+                     "modIds":  [
+                                    "midnightlib"
+                                ],
+                     "displayName":  "MidnightLib",
+                     "version":  "1.7.5",
+                     "fileName":  "midnightlib-1.7.5-fabric+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/codAaoxh/versions/vqqujBpd/midnightlib-1.7.5-fabric%2B1.21.1.jar",
+                     "sha256":  "b75155a638d15df61922bb635e2c5aae6102897ccaa1e226060a7f5ff4218091",
+                     "sizeBytes":  62853,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "midnightlib-*-fabric+1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "moarconcrete",
+                     "modIds":  [
+                                    "moarconcrete"
+                                ],
+                     "displayName":  "Moar Concrete",
+                     "version":  "1.3.1",
+                     "fileName":  "moar-concrete-1.3.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/lXDzrLAm/versions/hG50ZysI/moar-concrete-1.3.1.jar",
+                     "sha256":  "0e6e7b95b55ca13a50233743ba008a5285f4abf4cca7642bda40b27145f4f43f",
+                     "sizeBytes":  777538,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "moar-concrete-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "mobsbegone",
+                     "modIds":  [
+                                    "mobsbegone"
+                                ],
+                     "displayName":  "MobsBeGone",
+                     "version":  "0.0.7",
+                     "fileName":  "MobsBeGone-0.0.7.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/hXvXSxxg/versions/B5tawRRL/MobsBeGone-0.0.7.jar",
+                     "sha256":  "ad45c9c1bfe8c018d372f9fb6eb3e95507d6252b6cb4204478d04653d9634e98",
+                     "sizeBytes":  9837,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "MobsBeGone-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "modernfix",
+                     "modIds":  [
+                                    "modernfix"
+                                ],
+                     "displayName":  "ModernFix",
+                     "version":  "5.25.1+mc1.21.1",
+                     "fileName":  "modernfix-fabric-5.25.1+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar",
+                     "sha256":  "3ce5a9ce75066961b7fa5382692bb1387cc3536cc984b064ab7d70b97f3c674c",
+                     "sizeBytes":  471258,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "modernfix-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "modmenu",
+                     "modIds":  [
+                                    "modmenu"
+                                ],
+                     "displayName":  "Mod Menu",
+                     "version":  "11.0.4",
+                     "fileName":  "modmenu-11.0.4.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar",
+                     "sha256":  "a88e0d67c82b0434cbf56776c482587c275ed660f635d33f53ba485dfa30dcc3",
+                     "sizeBytes":  973059,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "modmenu-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "more_cobblemon_tweaks",
+                     "modIds":  [
+                                    "more_cobblemon_tweaks"
+                                ],
+                     "displayName":  "MoreCobblemonTweaks",
+                     "version":  "1.3.3",
+                     "fileName":  "MoreCobblemonTweaks-fabric-1.3.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/5KWlJ2HC/versions/1KKV0SvS/MoreCobblemonTweaks-fabric-1.3.3.jar",
+                     "sha256":  "8adee1d12c9dd86626e5472d6e1bbcb70b08ed62fea5bdd09db9180cc8411cae",
+                     "sizeBytes":  137626,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "MoreCobblemonTweaks-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "moreculling",
+                     "modIds":  [
+                                    "moreculling"
+                                ],
+                     "displayName":  "More Culling",
+                     "version":  "1.0.8",
+                     "fileName":  "moreculling-fabric-1.21.1-1.0.8.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/51shyZVL/versions/LekDmqLf/moreculling-fabric-1.21.1-1.0.8.jar",
+                     "sha256":  "19c7e65794511ab21eed63cab9e2efbf43a29fd2ea20234b23f92cb71c6a2aa2",
+                     "sizeBytes":  332100,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "moreculling-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "mousetweaks",
+                     "modIds":  [
+                                    "mousetweaks"
+                                ],
+                     "displayName":  "Mouse Tweaks",
+                     "version":  "2.26",
+                     "fileName":  "MouseTweaks-fabric-mc1.21-2.26.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/aC3cM3Vq/versions/ylmBQ38A/MouseTweaks-fabric-mc1.21-2.26.jar",
+                     "sha256":  "3e9fa4800fafef616fbf1545d62f5898f55c83fbd4126ce2b48b5e0077243fc0",
+                     "sizeBytes":  75984,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "MouseTweaks-fabric-mc1.21-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "musicnotification",
+                     "modIds":  [
+                                    "musicnotification"
+                                ],
+                     "displayName":  "MusicNotification",
+                     "version":  "3.0.0",
+                     "fileName":  "musicnotification-fabric-3.0.0+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/A4YQgwzz/versions/IgzyHmxS/musicnotification-fabric-3.0.0%2Bmc1.21.1.jar",
+                     "sha256":  "747b2527aa373a76e9d378ad1059369400c66fb50fb3ab22a409ac6d8154a614",
+                     "sizeBytes":  139713,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "musicnotification-fabric-*+mc1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "naturescompass",
+                     "modIds":  [
+                                    "naturescompass"
+                                ],
+                     "displayName":  "Nature\u0027s Compass",
+                     "version":  "1.21.1-2.6.0-fabric",
+                     "fileName":  "NaturesCompass-1.21.1-2.6.0-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/fPetb5Kh/versions/dtrDpgsF/NaturesCompass-1.21.1-2.6.0-fabric.jar",
+                     "sha256":  "ca49039369a0d8a9b8ab0a9e03e838c8ac1a5c7724756ec42762c54e80ed87a3",
+                     "sizeBytes":  233392,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "NaturesCompass-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "nethermap",
+                     "modIds":  [
+                                    "nethermap"
+                                ],
+                     "displayName":  "Better Nether Map",
+                     "version":  "4.0.0-1.21.1",
+                     "fileName":  "nethermap-4.0.0-1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/fdtm99de/versions/BEfm3cNd/nethermap-4.0.0-1.21.1.jar",
+                     "sha256":  "5d5243434984d64c904d21397530f2c7817105ca091bf409aa23f3842b9f3634",
+                     "sizeBytes":  21464,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "nethermap-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "netherportalfix",
+                     "modIds":  [
+                                    "netherportalfix"
+                                ],
+                     "displayName":  "NetherPortalFix",
+                     "version":  "21.1.3",
+                     "fileName":  "netherportalfix-fabric-1.21.1-21.1.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/nPZr02ET/versions/9KrnphgC/netherportalfix-fabric-1.21.1-21.1.3.jar",
+                     "sha256":  "c6589e3a95ee6dbced2442682caeec53789999bc6a2883f9919e039b1bee98c6",
+                     "sizeBytes":  213294,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "netherportalfix-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "nochatrestrictions",
+                     "modIds":  [
+                                    "nochatrestrictions"
+                                ],
+                     "displayName":  "No Chat Restrictions",
+                     "version":  "Fabric-MC1.21.11-v1.0.0",
+                     "fileName":  "NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/z440MEwJ/versions/2fnDwqeV/NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+                     "sha256":  "bc8b10f71e17822ca274936e487104e6572f60e8969b81bfe23f30fc11300a94",
+                     "sizeBytes":  9907,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "NoChatRestrictions-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "notenoughanimations",
+                     "modIds":  [
+                                    "notenoughanimations"
+                                ],
+                     "displayName":  "NotEnoughAnimations",
+                     "version":  "1.12.4",
+                     "fileName":  "notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/MPCX6s5C/versions/HyecdWuC/notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+                     "sha256":  "12e3bded47f6669030edf57b615e77de8d080f38d0313dd892c6d18833fc39fd",
+                     "sizeBytes":  1948132,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "notenoughanimations-fabric-*-mc1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "notenoughcrashes",
+                     "modIds":  [
+                                    "notenoughcrashes"
+                                ],
+                     "displayName":  "Not Enough Crashes",
+                     "version":  "4.4.9+1.21.1",
+                     "fileName":  "notenoughcrashes-fabric-4.4.9+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/yM94ont6/versions/gR0LY1dB/notenoughcrashes-fabric-4.4.9%2B1.21.1.jar",
+                     "sha256":  "1a3a0ec9e7bb60f9c15938ca4287beaf5e49e81183ac273d1a02d734aa327a74",
+                     "sizeBytes":  601087,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "notenoughcrashes-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "obc",
+                     "modIds":  [
+                                    "obc"
+                                ],
+                     "displayName":  "Only Bottle Caps",
+                     "version":  "1.3.0",
+                     "fileName":  "Only Bottle Caps-1.3.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/tDRRddpZ/versions/9QilYtN2/Only%20Bottle%20Caps-1.3.0.jar",
+                     "sha256":  "f18d5ddfaa0a77d0ef68b9db470a41095522878e25b1cc2a5282e747c784f09d",
+                     "sizeBytes":  250451,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Only Bottle Caps-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "openpartiesandclaims",
+                     "modIds":  [
+                                    "openpartiesandclaims"
+                                ],
+                     "displayName":  "Open Parties and Claims",
+                     "version":  "0.27.5",
+                     "fileName":  "open-parties-and-claims-fabric-1.21.1-0.27.5.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/gF3BGWvG/versions/lQh1EunS/open-parties-and-claims-fabric-1.21.1-0.27.5.jar",
+                     "sha256":  "b3706d5410cb07825fd63d71478570ddb42b60edc25cb2bf2a511040ff903d36",
+                     "sizeBytes":  1740108,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "open-parties-and-claims-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "owo",
+                     "modIds":  [
+                                    "owo"
+                                ],
+                     "displayName":  "oωo",
+                     "version":  "0.12.15.4+1.21",
+                     "fileName":  "owo-lib-0.12.15.4+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar",
+                     "sha256":  "825180ce17bc012fb450653b14df9f32479dcdd073fc3f133bb47462f5a63cec",
+                     "sizeBytes":  1183559,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "owo-lib-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "packetfixer",
+                     "modIds":  [
+                                    "packetfixer"
+                                ],
+                     "displayName":  "Packet Fixer",
+                     "version":  "3.3.1",
+                     "fileName":  "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/c7m1mi73/versions/2C41Q8WX/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+                     "sha256":  "2979a8a3f44e5d5df4f9f6315d18c220f3debf736bb8a2c2740acdfb13bd820f",
+                     "sizeBytes":  46623,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "packetfixer-*-1.20.5-1.21.X-merged.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "paginatedadvancements",
+                     "modIds":  [
+                                    "paginatedadvancements"
+                                ],
+                     "displayName":  "Paginated Advancements",
+                     "version":  "2.5.1",
+                     "fileName":  "paginatedadvancements-2.5.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/pJogNFap/versions/fQnpir9a/paginatedadvancements-2.5.1.jar",
+                     "sha256":  "776d8006401781bc036199acc9ba80f7dce6c3bcebbbfa260a774add750c4d2d",
+                     "sizeBytes":  71859,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "paginatedadvancements-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "particle_core",
+                     "modIds":  [
+                                    "particle_core"
+                                ],
+                     "displayName":  "Particle Core",
+                     "version":  "0.3.3+1.21",
+                     "fileName":  "particle_core-0.3.3+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/RSeLon5O/versions/mau4pnKr/particle_core-0.3.3%2B1.21.jar",
+                     "sha256":  "e7cfef3eb16d5b73c00915a5f2b820d66555c23d13e0636125d7b07384a443e4",
+                     "sizeBytes":  147812,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "particle_core-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "particlerain",
+                     "modIds":  [
+                                    "particlerain"
+                                ],
+                     "displayName":  "Particle Rain",
+                     "version":  "4.0.0-beta.10",
+                     "fileName":  "particlerain-4.0.0-beta.10+1.21.1-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/nrikgvxm/versions/ddaOLHgq/particlerain-4.0.0-beta.10%2B1.21.1-fabric.jar",
+                     "sha256":  "49bf60c5b95ea954efa51c63609f0a4668230e12f870f0eb6bdb63d207a22dc8",
+                     "sizeBytes":  608651,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "particlerain-*+1.21.1-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "particular",
+                     "modIds":  [
+                                    "particular"
+                                ],
+                     "displayName":  "Particular",
+                     "version":  "1.1.2+1.21",
+                     "fileName":  "particular-1.1.2+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/B1CcCd9h/versions/3dq7wTCR/particular-1.1.2%2B1.21.jar",
+                     "sha256":  "932e9f48506c6258f9215a243049076fbc9e72c3f42284115d59f65696c20be8",
+                     "sizeBytes":  240317,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "particular-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "pasture-loot",
+                     "modIds":  [
+                                    "pasture-loot"
+                                ],
+                     "displayName":  "PastureLoot",
+                     "version":  "1.0.5+1.21.1",
+                     "fileName":  "pastureLoot-1.0.5+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/XP2jcAo0/versions/MYJtblOM/pastureLoot-1.0.5%2B1.21.1.jar",
+                     "sha256":  "48a705eb70a3f129d64af565ff79cfe164d0e59fe2bbc20a903024d0cc844b8f",
+                     "sizeBytes":  45871,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "pastureLoot-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "pingwheel",
+                     "modIds":  [
+                                    "pingwheel"
+                                ],
+                     "displayName":  "Ping Wheel",
+                     "version":  "1.12.2",
+                     "fileName":  "Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/QQXAdCzh/versions/S05ir9dj/Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+                     "sha256":  "9ba63ca5f33c86d0ce3aec2b04fafcc2fbcb8e705e46a7be20ff66382331c3e3",
+                     "sizeBytes":  152703,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Ping-Wheel-*-fabric-1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "platform",
+                     "modIds":  [
+                                    "platform"
+                                ],
+                     "displayName":  "Platform",
+                     "version":  "1.3.3",
+                     "fileName":  "Platform-fabric-1.21.1-1.3.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/i6fiqm5y/versions/BbIdNbF1/Platform-fabric-1.21.1-1.3.3.jar",
+                     "sha256":  "52f49993d4440d266fa3a077090e8091983cd1bda5942f176ae75f3e9e350779",
+                     "sizeBytes":  735744,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Platform-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "playerxp",
+                     "modIds":  [
+                                    "playerxp"
+                                ],
+                     "displayName":  "PlayerXP",
+                     "version":  "1.0.9+1.21.1",
+                     "fileName":  "playerxp-fabric-1.0.9+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/zlrbPCvu/versions/f6114Tas/playerxp-fabric-1.0.9%2B1.21.1.jar",
+                     "sha256":  "22133f464ea4442b481d0bc814ab928b0473890a86bf36fa90884ed660e3edf9",
+                     "sizeBytes":  10818,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "playerxp-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "pokeblocks",
+                     "modIds":  [
+                                    "pokeblocks"
+                                ],
+                     "displayName":  "Pokeblocks",
+                     "version":  "1.4.0-1.21.1",
+                     "fileName":  "pokeblocks-1.4.0-1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/hnOfcjSq/versions/AMYJbQsk/pokeblocks-1.4.0-1.21.1.jar",
+                     "sha256":  "c113f9e61a7bef35c3bacc57651a7508f3f07c20218b51eade31766899f1176d",
+                     "sizeBytes":  1606467,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "pokeblocks-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "rctapi",
+                     "modIds":  [
+                                    "rctapi"
+                                ],
+                     "displayName":  "Radical Cobblemon Trainers API",
+                     "version":  "0.15.2-beta",
+                     "fileName":  "rctapi-fabric-1.21.1-0.15.2-beta.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/CBfM2yw7/versions/9OZx0coL/rctapi-fabric-1.21.1-0.15.2-beta.jar",
+                     "sha256":  "e5bd96b1b74aad41588acc078e7385ca72f66a862aae47adda3d55b44c1d5ba8",
+                     "sizeBytes":  234250,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "rctapi-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "rctmod",
+                     "modIds":  [
+                                    "rctmod"
+                                ],
+                     "displayName":  "Radical Cobblemon Trainers",
+                     "version":  "0.18.1-beta",
+                     "fileName":  "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/lRwTUnD7/versions/gQx1F1dx/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+                     "sha256":  "92951d3be475a0433f8ef508439730723e2e901dd1e3b2509c29205031d4eb51",
+                     "sizeBytes":  6757956,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "rctmod-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "rechiseled",
+                     "modIds":  [
+                                    "rechiseled"
+                                ],
+                     "displayName":  "Rechiseled",
+                     "version":  "1.2.4",
+                     "fileName":  "rechiseled-1.2.4-fabric-mc1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/B0g2vT6l/versions/Whwd5n82/rechiseled-1.2.4-fabric-mc1.21.jar",
+                     "sha256":  "621eb411d88470508a1f1ad6797e569510ca8a63e650728e615b8a65c377b773",
+                     "sizeBytes":  11913849,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "rechiseled-*-fabric-mc1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "reeses-sodium-options",
+                     "modIds":  [
+                                    "reeses-sodium-options"
+                                ],
+                     "displayName":  "Reese\u0027s Sodium Options",
+                     "version":  "2.2.3+mc1.21.1",
+                     "fileName":  "reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Bh37bMuy/versions/jDOK2MQs/reeses-sodium-options-fabric-2.2.3%2Bmc1.21.1.jar",
+                     "sha256":  "6f5a2964656552da24e015b6f6e03d4baac8cfed919978785e94920f3fd0f568",
+                     "sizeBytes":  259211,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "reeses-sodium-options-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "repurposed_structures",
+                     "modIds":  [
+                                    "repurposed_structures"
+                                ],
+                     "displayName":  "Repurposed Structures",
+                     "version":  "7.5.21+1.21.1-fabric",
+                     "fileName":  "repurposed_structures-7.5.21+1.21.1-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/muf0XoRe/versions/4uDzF4B9/repurposed_structures-7.5.21%2B1.21.1-fabric.jar",
+                     "sha256":  "c3a6ab373dce927c57ce79d14c1ebc9ef4f49d58abcaf9e4caa89a38aab08b8c",
+                     "sizeBytes":  8202318,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "repurposed_structures-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "resourcefullib",
+                     "modIds":  [
+                                    "resourcefullib"
+                                ],
+                     "displayName":  "Resourceful Lib",
+                     "version":  "3.0.12",
+                     "fileName":  "resourcefullib-fabric-1.21-3.0.12.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar",
+                     "sha256":  "93064c5aff85bf5e6385470f311fd1c7de172f58b02fefb1d2920db76f8cd8b5",
+                     "sizeBytes":  485586,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "resourcefullib-fabric-1.21-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "resourcepackoverrides",
+                     "modIds":  [
+                                    "resourcepackoverrides"
+                                ],
+                     "displayName":  "Resource Pack Overrides",
+                     "version":  "21.1.0",
+                     "fileName":  "ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/YsFycamt/versions/MIxxajqC/ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+                     "sha256":  "5db1e3d3f07947ceb893ccd823a7660f62f8f794e2bf9a5b721a3c3d32dcbc59",
+                     "sizeBytes":  80827,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ResourcePackOverrides-v*-1.21.1-Fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "respackopts",
+                     "modIds":  [
+                                    "respackopts"
+                                ],
+                     "displayName":  "Resource Pack Options",
+                     "version":  "4.14.0+1.21.1.4",
+                     "fileName":  "respackopts-4.14.0+1.21.1.4.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/TiF5QWZY/versions/y5eBSMkZ/respackopts-4.14.0%2B1.21.1.4.jar",
+                     "sha256":  "8c38228c14841a01034e6371fada5754754a0abf13de843eea1e1d41dc8257f3",
+                     "sizeBytes":  557358,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "respackopts-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "roughlyenoughitems",
+                     "modIds":  [
+                                    "roughlyenoughitems"
+                                ],
+                     "displayName":  "Roughly Enough Items",
+                     "version":  "16.0.799",
+                     "fileName":  "RoughlyEnoughItems-16.0.799-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/nfn13YXA/versions/aWzTESNC/RoughlyEnoughItems-16.0.799-fabric.jar",
+                     "sha256":  "098c840780940010f2ba48cb758b77c1b991e69ab3fbec8725af099351653c9d",
+                     "sizeBytes":  2451799,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "RoughlyEnoughItems-*-fabric.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "safepastures",
+                     "modIds":  [
+                                    "safepastures"
+                                ],
+                     "displayName":  "Safe Pastures",
+                     "version":  "1.1.1+1.21.1",
+                     "fileName":  "SafePastures-1.1.1+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/qpe01spE/versions/ahfbSTCi/SafePastures-1.1.1%2B1.21.1.jar",
+                     "sha256":  "41d1c286db3e02a3249346a5efda6f95799ab895aa40c03a87cdcd81a95e4b45",
+                     "sizeBytes":  16518,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "SafePastures-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "scalablelux",
+                     "modIds":  [
+                                    "scalablelux"
+                                ],
+                     "displayName":  "ScalableLux",
+                     "version":  "0.1.0.1+fabric.d0d58ab",
+                     "fileName":  "ScalableLux-0.1.0.1+fabric.d0d58ab-all.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/Ps1zyz6x/versions/Yx1tgJMI/ScalableLux-0.1.0.1%2Bfabric.d0d58ab-all.jar",
+                     "sha256":  "f32ed8d825c7af90b14ab9f7bbe1293818bcf411fea104ae20d18ecde30f8387",
+                     "sizeBytes":  177266,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "ScalableLux-*-all.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "searchables",
+                     "modIds":  [
+                                    "searchables"
+                                ],
+                     "displayName":  "Searchables",
+                     "version":  "1.0.2",
+                     "fileName":  "Searchables-fabric-1.21.1-1.0.2.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/fuuu3xnx/versions/tRdr8Bg3/Searchables-fabric-1.21.1-1.0.2.jar",
+                     "sha256":  "0b58a40a41db4a4af4ef84475b0ea330be3b18fdcac2eca68ede46d9f4df3d76",
+                     "sizeBytes":  79531,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "Searchables-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "sodium",
+                     "modIds":  [
+                                    "sodium"
+                                ],
+                     "displayName":  "Sodium",
+                     "version":  "0.8.12+mc1.21.1",
+                     "fileName":  "sodium-fabric-0.8.12+mc1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/AANobbMI/versions/KIRFiWG4/sodium-fabric-0.8.12%2Bmc1.21.1.jar",
+                     "sha256":  "9ad11a616d1ca759867de8a5bbafcde5ab50b68dbd674110c7b90aeea251b793",
+                     "sizeBytes":  1573180,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "sodium-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "sophisticatedbackpacks",
+                     "modIds":  [
+                                    "sophisticatedbackpacks"
+                                ],
+                     "displayName":  "Sophisticated Backpacks",
+                     "version":  "1.21.1-3.23.4.3.106",
+                     "fileName":  "sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+                     "sha256":  "2c099bfd5dc02ace6e73ffd9259940b0597cd4da7216a53a2c60c6732900d6aa",
+                     "sizeBytes":  988478,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "sophisticatedbackpacks-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "sophisticatedcore",
+                     "modIds":  [
+                                    "sophisticatedcore"
+                                ],
+                     "displayName":  "Sophisticated Core",
+                     "version":  "1.21.1-1.2.9.21.168",
+                     "fileName":  "sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+                     "sha256":  "3c71a04d5b03cdf9d9fe50e71849fdf11291dd1fab149621e35688ef6e516054",
+                     "sizeBytes":  2996065,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "sophisticatedcore-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "sophisticatedstorage",
+                     "modIds":  [
+                                    "sophisticatedstorage"
+                                ],
+                     "displayName":  "Sophisticated Storage",
+                     "version":  "1.21.1-1.3.7.9.139",
+                     "fileName":  "sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/iHtpVwJL/versions/kjNlOByJ/sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+                     "sha256":  "0dbaf1ff069c33a8c4738518d983d1cab0cdca6871a6c7b7dc5727c531eca215",
+                     "sizeBytes":  1670672,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "sophisticatedstorage-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "sound_physics_remastered",
+                     "modIds":  [
+                                    "sound_physics_remastered"
+                                ],
+                     "displayName":  "Sound Physics Remastered",
+                     "version":  "1.21.1-1.5.1",
+                     "fileName":  "sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/qyVF9oeo/versions/tVu2EZ4u/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+                     "sha256":  "8884ded0f53f97a6cb2fca9ef035947af8c3376a406e0bdaa8309bfe87801799",
+                     "sizeBytes":  205671,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "sound-physics-remastered-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "soundsbegone",
+                     "modIds":  [
+                                    "soundsbegone"
+                                ],
+                     "displayName":  "SoundsBeGone",
+                     "version":  "1.5.2",
+                     "fileName":  "soundsbegone-fabric-1.5.2+mc1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/FOIvwGKz/versions/N0GVB9DV/soundsbegone-fabric-1.5.2%2Bmc1.21.jar",
+                     "sha256":  "88a0dd266a5639e89c33c9320685c57d482641738f9bc5b6e6800c3c34b80b32",
+                     "sizeBytes":  6151935,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "soundsbegone-fabric-*+mc1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "stackdeobfuscator",
+                     "modIds":  [
+                                    "stackdeobfuscator"
+                                ],
+                     "displayName":  "StackDeobfuscator",
+                     "version":  "1.4.3+08e71cc",
+                     "fileName":  "StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/NusMqsjF/versions/pyiVLk9R/StackDeobfuscatorFabric-1.4.3%2B08e71cc.jar",
+                     "sha256":  "335627367b8212c17e58978866874ede8d0d9a159053fbb38e56123fff83d0f9",
+                     "sizeBytes":  321213,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "StackDeobfuscatorFabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "supermartijn642configlib",
+                     "modIds":  [
+                                    "supermartijn642configlib"
+                                ],
+                     "displayName":  "SuperMartijn642\u0027s Config Lib",
+                     "version":  "1.1.8",
+                     "fileName":  "supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/LN9BxssP/versions/euSlaAtA/supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+                     "sha256":  "63a29f2acf4be2c5ca89a81a046c1100111ad2865d9638f638e27ca161e7211c",
+                     "sizeBytes":  206993,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "supermartijn642configlib-*-fabric-mc1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "supermartijn642corelib",
+                     "modIds":  [
+                                    "supermartijn642corelib"
+                                ],
+                     "displayName":  "SuperMartijn642\u0027s Core Lib",
+                     "version":  "1.1.21",
+                     "fileName":  "supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/rOUBggPv/versions/blDCgrqh/supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+                     "sha256":  "462756caa1efeff760a752a29136d59d40c5ad6047603472785f65a44d1da6e3",
+                     "sizeBytes":  616830,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "supermartijn642corelib-*-fabric-mc1.21.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "tim_core",
+                     "modIds":  [
+                                    "tim_core"
+                                ],
+                     "displayName":  "Tim Core",
+                     "version":  "1.7.3-fabric-1.32.0",
+                     "fileName":  "timcore-fabric-1.7.3-1.32.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/lVP9aUaY/versions/g5MKQfLZ/timcore-fabric-1.7.3-1.32.0.jar",
+                     "sha256":  "8daaf896de6bc2ee0c097ff24659d248d800a31d7a8373c93a9790d2afb48d1d",
+                     "sizeBytes":  304444,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "timcore-fabric-1.7.3-1.32.0.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "tmcraft",
+                     "modIds":  [
+                                    "tmcraft"
+                                ],
+                     "displayName":  "TM Craft",
+                     "version":  "1.4.18+1.7.3",
+                     "fileName":  "tmcraft-1.4.18+1.7.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/HU6mkUZs/versions/RYBI5bnM/tmcraft-1.4.18%2B1.7.3.jar",
+                     "sha256":  "4f98cd4a19750878bc41e940ff6c0abb759f3b861487a0830d5823b499fe5529",
+                     "sizeBytes":  3360417,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "tmcraft-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "toms_storage",
+                     "modIds":  [
+                                    "toms_storage"
+                                ],
+                     "displayName":  "Tom\u0027s Simple Storage Mod",
+                     "version":  "2.3.0",
+                     "fileName":  "toms_storage_fabric-1.21-2.3.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/XZNI4Cpy/versions/GwLz79tK/toms_storage_fabric-1.21-2.3.0.jar",
+                     "sha256":  "fad39f7ed0ac20ab0345aeb7dbe1be0b2732fa11fd333b6874629e925c45d5d1",
+                     "sizeBytes":  1962781,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "toms_storage_fabric-1.21-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "tooltipfix",
+                     "modIds":  [
+                                    "tooltipfix"
+                                ],
+                     "displayName":  "ToolTip Fix",
+                     "version":  "1.1.1-1.20",
+                     "fileName":  "tooltipfix-1.1.1-1.20.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/2RKFTmiB/versions/B2L4LeMV/tooltipfix-1.1.1-1.20.jar",
+                     "sha256":  "50c6c45d16c62b0d9a832692b7f6250d5561f0b28bf7729d8ab25fe1162c90d2",
+                     "sizeBytes":  12432,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "tooltipfix-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "trinkets",
+                     "modIds":  [
+                                    "trinkets"
+                                ],
+                     "displayName":  "Trinkets",
+                     "version":  "3.10.0",
+                     "fileName":  "trinkets-3.10.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/5aaWibi9/versions/JagCscwi/trinkets-3.10.0.jar",
+                     "sha256":  "349fd2aa8930b232050ee5304db55e4ef738b017971afe7c84acd589a95fda2f",
+                     "sizeBytes":  272944,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "trinkets-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "universal_shops",
+                     "modIds":  [
+                                    "universal_shops"
+                                ],
+                     "displayName":  "Universal Shops",
+                     "version":  "1.7.1+1.21",
+                     "fileName":  "universal_shops-1.7.1+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/cnIatHrN/versions/BfXSBkjs/universal_shops-1.7.1%2B1.21.jar",
+                     "sha256":  "119a3d2a283bcfbd3e62ba955d231dc52cdc43da0ab2be44cd3dfa32e3e466da",
+                     "sizeBytes":  1541862,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "universal_shops-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "vanillabackport",
+                     "modIds":  [
+                                    "vanillabackport"
+                                ],
+                     "displayName":  "VanillaBackport",
+                     "version":  "1.1.7.10",
+                     "fileName":  "VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/6xwxDTgf/versions/ayvoY8lx/VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+                     "sha256":  "6aba8f56fd71b9b5b724812b22f14d11a71e9ca0bf7e84b52b4c8b91736e0734",
+                     "sizeBytes":  54994072,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "VanillaBackport-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "villagerconfig",
+                     "modIds":  [
+                                    "villagerconfig"
+                                ],
+                     "displayName":  "VillagerConfig",
+                     "version":  "4.5.4",
+                     "fileName":  "villagerconfig-fabric-4.5.4+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/OClpEDe3/versions/sb4XIWwK/villagerconfig-fabric-4.5.4%2B1.21.1.jar",
+                     "sha256":  "627483b71a24679d51321c618fa6c8abe8df64cf770b001b319412677adab49b",
+                     "sizeBytes":  355303,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "villagerconfig-fabric-*+1.21.1.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "voicechat",
+                     "modIds":  [
+                                    "voicechat"
+                                ],
+                     "displayName":  "Simple Voice Chat",
+                     "version":  "1.21.1-2.6.20",
+                     "fileName":  "voicechat-fabric-1.21.1-2.6.20.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/9eGKb6K1/versions/IttovdN3/voicechat-fabric-1.21.1-2.6.20.jar",
+                     "sha256":  "586d4757ec51cd180f9fecc6c94653fdace0f50993641626ada819e71562b5e3",
+                     "sizeBytes":  5361828,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "voicechat-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "waystones",
+                     "modIds":  [
+                                    "waystones"
+                                ],
+                     "displayName":  "Waystones",
+                     "version":  "21.1.36",
+                     "fileName":  "waystones-fabric-1.21.1-21.1.36.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/LOpKHB2A/versions/sj1O4rl4/waystones-fabric-1.21.1-21.1.36.jar",
+                     "sha256":  "1ec882abb06c9c2b9f2cdd3ed01c80e612b8b24b4a9e94280878386e5c2108ad",
+                     "sizeBytes":  1220547,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "waystones-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "xaerominimap",
+                     "modIds":  [
+                                    "xaerominimap"
+                                ],
+                     "displayName":  "Xaero\u0027s Minimap",
+                     "version":  "26.2.0",
+                     "fileName":  "xaerominimap-fabric-1.21.1-26.2.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/1bokaNcj/versions/JVCvGnhe/xaerominimap-fabric-1.21.1-26.2.0.jar",
+                     "sha256":  "66cac99635ac0e8e6798ae0e6cf925e908dfa5f50d206fcf14c6221bf51addf6",
+                     "sizeBytes":  2220634,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "xaerominimap-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "xaeroworldmap",
+                     "modIds":  [
+                                    "xaeroworldmap"
+                                ],
+                     "displayName":  "Xaero\u0027s World Map",
+                     "version":  "1.42.0",
+                     "fileName":  "xaeroworldmap-fabric-1.21.1-1.42.0.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/NcUtCpym/versions/dnHKmImB/xaeroworldmap-fabric-1.21.1-1.42.0.jar",
+                     "sha256":  "c20e1355f5b6d71e69a6b6eb3c8741ac0e68f741949da1f6c39c742d30732d9e",
+                     "sizeBytes":  1435557,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "xaeroworldmap-fabric-1.21.1-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "yet_another_config_lib_v3",
+                     "modIds":  [
+                                    "yet_another_config_lib_v3"
+                                ],
+                     "displayName":  "YetAnotherConfigLib",
+                     "version":  "3.8.2+1.21.1-fabric",
+                     "fileName":  "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar",
+                     "sha256":  "6ab420b7d1326fc9851b96a8967504bd644da421ed6438ceb9a9d9c993a408b1",
+                     "sizeBytes":  1131265,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "yet_another_config_lib_v3-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "zamega",
+                     "modIds":  [
+                                    "zamega"
+                                ],
+                     "displayName":  "zamega",
+                     "version":  "1.7.3",
+                     "fileName":  "zamega-fabric-1.7.3.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/2V1Y86sc/versions/x5u68zHH/zamega-fabric-1.7.3.jar",
+                     "sha256":  "0d134591a9db9834f5f2bffdce4bd4cd0976a1b7879aa7f52ce064c38199cfaa",
+                     "sizeBytes":  2387420,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "zamega-fabric-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "zfastnoise",
+                     "modIds":  [
+                                    "zfastnoise"
+                                ],
+                     "displayName":  "Fast Noise",
+                     "version":  "1.0.13+1.21",
+                     "fileName":  "zfastnoise-1.0.13+1.21.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/OnlVIpq5/versions/tss0FueO/zfastnoise-1.0.13%2B1.21.jar",
+                     "sha256":  "da1b8702dfbdbea125aca0c0b1b3da5f8c3eb483977dff6482f32178fd007684",
+                     "sizeBytes":  38857,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "zfastnoise-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "zoomify",
+                     "modIds":  [
+                                    "zoomify"
+                                ],
+                     "displayName":  "Zoomify",
+                     "version":  "2.15.2+1.21.1",
+                     "fileName":  "zoomify-2.15.2+1.21.1.jar",
+                     "downloadUrl":  "https://cdn.modrinth.com/data/w7ThoJFB/versions/6jrMC48Z/zoomify-2.15.2%2B1.21.1.jar",
+                     "sha256":  "6c317987df28922e227ab3ac4e39090460d99b965bcb9c8da8f9a4493b705d00",
+                     "sizeBytes":  872937,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "zoomify-*.jar"
                                              ]
                  }
              ]
