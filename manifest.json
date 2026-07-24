@@ -3,18 +3,18 @@
     "packId":  "gobbleverse",
     "name":  "코블버스 클라이언트 필수 모드",
     "channel":  "stable",
-    "manifestVersion":  "2026.07.22.2256",
+    "manifestVersion":  "2026.07.24.2046",
     "minecraftVersion":  "1.21.1",
-    "generatedAt":  "2026-07-22T13:56:06.8647172Z",
+    "generatedAt":  "2026-07-24T11:45:46.7271249Z",
     "mods":  [
                  {
                      "id":  "cobbleverse_ui",
                      "displayName":  "코블버스 UI",
-                     "version":  "0.2.17",
-                     "fileName":  "cobbleverse-ui-0.2.17.jar",
-                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-ui-0.2.17.jar",
-                     "sha256":  "31c5e718711b7983cb2859c8e81e299d2d98d59ee0a6ce4e54b4de0e76c777ef",
-                     "sizeBytes":  501201,
+                     "version":  "0.2.22",
+                     "fileName":  "cobbleverse-ui-0.2.22.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/cobbleverse-ui-0.2.22.jar",
+                     "sha256":  "6575b9e8deab5c208cf2b9b9b07c923ce76b0bcabfb013430526b99425f1890f",
+                     "sizeBytes":  516382,
                      "required":  true,
                      "managedFilePatterns":  [
                                                  "cobbleverse-ui-*.jar"
@@ -31,6 +31,19 @@
                      "required":  true,
                      "managedFilePatterns":  [
                                                  "cobbleverse-claim-*.jar"
+                                             ]
+                 },
+                 {
+                     "id":  "farm_and_charm",
+                     "displayName":  "Let\u0027s Do: Farm \u0026 Charm",
+                     "version":  "1.1.22",
+                     "fileName":  "letsdo-farm_and_charm-fabric-1.1.22.jar",
+                     "downloadUrl":  "https://raw.githubusercontent.com/gominsu08/gobbleverse-client-updates/main/mods/letsdo-farm_and_charm-fabric-1.1.22.jar",
+                     "sha256":  "34ba11ad463cc02b046c662bf3e767107b23f87d08a275dc4737b89229ff7055",
+                     "sizeBytes":  2557418,
+                     "required":  true,
+                     "managedFilePatterns":  [
+                                                 "letsdo-farm_and_charm-fabric-*.jar"
                                              ]
                  }
              ]
